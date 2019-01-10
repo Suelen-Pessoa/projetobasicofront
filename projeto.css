@@ -1,0 +1,176 @@
+ body {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ 
+  header {
+	background-color: green;
+	height: 120px;
+	font-size: 35px;
+	color: white;
+	text-transform: uppercase;
+	border-bottom: 10px solid black;
+	font-family: Arial, Helvetica, sans-serif;
+	
+
+  }
+
+  .sacar-image{
+
+	height: 125 px;
+	width: 130px;
+	margin-left: 2.5%;
+  }
+  
+
+  .lateral {
+
+	position: absolute;
+	width: 200px;
+	height: 100%; 
+	background: #9C9C9C;	
+	float: left;
+  }
+
+	.rodape-pagina {
+	background-color: #9C9C9C;
+	color: #F2FFFC;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	
+}	
+
+ .facebook{
+	width: 30px;
+	height: 30px;
+}
+
+
+	.usuario {
+		font-size: 20px;
+		position: absolute;
+		top: 40px;
+		left: 20px;
+	
+	}
+	
+	.senha {
+		font-size: 20px;
+		position: absolute;
+		top: 95px;
+		left: 20px;
+	}
+	
+	.entrada-user {
+			width: 300px;
+			height: 30px;
+			position: absolute;
+			top: 35px;
+			left: 100px;
+	}
+	
+	.entrada-senha {
+			width: 300px;
+			height: 30px;
+			position: absolute;
+			top: 90px;
+			left: 100px;
+	}
+		
+	button {
+		width: 10%;
+		height: 100%;		
+		margin-left: 80%;
+		top: -20px;
+		position: relative;
+		float: left;
+		
+	}
+	
+	.logar {
+		position: absolute;
+		left: 280px;
+		top: 210px;
+	}
+	
+	.limpar {
+		position: absolute;
+		left: 400px;
+		top: 210px;
+	}
+
+.table-information{
+  margin-left: 200px;
+	width: 100%;
+	border: 2px solid salmon;
+}
+
+li {
+	padding: 12px;
+	margin: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+li:hover {
+  background: green;
+}
+
+li > a {
+	color: #fff;
+	margin-top: 5px;
+	padding: 0px 10px;
+	position: absolute;
+}
+
+li > a:hover {
+	color: red;
+}
+
+li > button{
+	width: 10%;
+	border-radius: 10%;
+}
+
+li > input {
+	width: 20%;
+	height: 40px;
+	border-radius: 10%;
+}
+.dinheiro{
+	
+	width: 25px;
+	height: 25px;
+}
+
+.box {
+	width: 400px;
+	height: 200px;
+	background: #fff;
+	margin: 20px;
+	border: solid 2px black;
+	font-weight: bold;
+	font-size: 18px;
+
+}
+.box-header {
+	height: 30px;
+	background: green;
+	padding: 5px;
+	font-weight: bold;
+    font-size: 27px;
+    color: #fff;
+}
+
+.box-content {
+	padding: 5px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
