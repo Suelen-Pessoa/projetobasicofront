@@ -30,7 +30,7 @@ display: flex;
 height: 30vh;
 width: 100vw;
 align-items: center;
-justify-content: end;
+justify-content: flex-start;
 background-color: darkblue;
 }
 .banco{
@@ -67,27 +67,27 @@ height: 30px;
 
 .table-information{
     margin-left: auto;
-	width: 100vw;
+	width: 100vw; 
 	height: 100vh;
 	background-image: url(https://st2.depositphotos.com/1084193/10548/v/950/depositphotos_105482794-stock-illustration-abstract-digital-web-site-header.jpg);
 	background-repeat: no-repeat;
 	position: relative;
-	background-size: 100vw;
+	background-size: 100%;
 
 }
 
 .divMae{
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
 }
+
 li {
 	padding: 20px;
 	margin: 0px;
 	font-family: Arial, Helvetica, sans-serif;
-		text-decoration: none;
+	text-decoration: none;
+}
+li a {
+	text-decoration: none;
 }
 
 li:hover {
@@ -124,7 +124,7 @@ li > input {
 	height: 25px;
 }
 
-.box {
+.box,  .box-extrato{
 	width: 30vw;
     height: 30vh;
 	background: #fff;
@@ -134,17 +134,6 @@ li > input {
 	font-size: 18px;
 	border-radius: 10px;
 	
-}
-.box-extrato {
-
-	width: 30vw;
-	height: 30vh;
-	background: #fff;
-	margin: 20px;
-	font-weight: bold;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 2px black;
 }
 
 .box-header {
@@ -157,16 +146,6 @@ li > input {
     border-radius: 2px;
 }
 
-.extrato-header {
-	height: 30px;
-	background: green;
-	padding: 5px;
-	font-weight: bold;
-    font-size: 27px;
-	color: #fff;
-	border-radius: 2px;
-}
-
 .box-content {
 	padding: 5px;
 }
@@ -175,10 +154,6 @@ li > input {
 
 	align-items: center;
      margin: auto;
-}
-
-.comentario-footer {
-	
 }
 
 .invisivel {

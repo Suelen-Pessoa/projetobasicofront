@@ -20,32 +20,18 @@ function depositar(valor){
 	}
 	if (valor >0){
 		saldoFloat += parseFloat(valor);
-		console.log(saldoFloat.toFixed(2));
 		var campoSaldo = document.getElementById("saldo");
-		campoSaldo.textContent = "Saldo: "+saldoFloat.toFixed(2);
+		campoSaldo.textContent = "Saldo: "+saldoFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 		limparCampo();	
 		}
-	if(valor <0){
+	else {
 		var campoMensagem = document.querySelector(".mensagem");
 		campoMensagem.textContent = ("Valor negativo. Informe o valor do deposito.");
 		limparCampo();
 	}
 }
 
-
-
-function limparCampo(){
-	document.getElementById("valor").value = "";
-    document.getElementById("valor").focus();
-}
-
-
-
 var habilitarDeposito = document.getElementById("botaoDepositar");
-var mostrarCampos = document.getElementById("campos");
-
-
-
 
 habilitarDeposito.addEventListener("click", function(){
 	informacaoDeposito.classList.remove("invisivel");

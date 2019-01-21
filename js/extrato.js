@@ -1,29 +1,23 @@
 var clientes = [
-    {
-        nome : "Cliente 1",
-        historico : []
-    },
-    {
-        nome : "Cliente 2",
+    {    
         historico : []
     }
 ];
 
 var cliente = 0;
-
 var button1 = document.getElementById("efetua");
 
 button1.addEventListener("click", function(){
 
     var input1 = document.getElementById("valor");
-    var teste = parseFloat(input1.value);
+    var valorOperacao = parseFloat(input1.value);
     if (input1.value > 0){
 
     var d = new Date();
     
     var operacao = {
         operacao : "Dep",
-        valor : teste.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}),
+        valor : valorOperacao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}),
         data : d.getDate() + "/" + d.getMonth()+1 + "/" + d.getFullYear(),
         hora : d.getHours() + ":" + d.getMinutes() + ":"+ d.getSeconds(),
     };
@@ -42,7 +36,7 @@ var button2 = document.getElementById("efetua2");
 button2.addEventListener("click", function(){
 
     var input1 = document.getElementById("valor");
-    var teste = parseFloat(input1.value);
+    var valorOperacao = parseFloat(input1.value);
 
     // ADICIONA ESTE BLOCO
     var d = new Date();
@@ -50,11 +44,11 @@ button2.addEventListener("click", function(){
     if(input1.value <=saldoFloat && input1.value !="" && input1.value > 0 ){
     var operacao = {
         operacao : "Saq",
-        valor : teste.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}),
+        valor : valorOperacao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}),
         data : d.getDate() + "/" + d.getMonth()+1 + "/" + d.getFullYear(),
         hora : d.getHours() + ":" + d.getMinutes() + ":"+ d.getSeconds(),
     };
-    console.log(operacao);
+    
     clientes[cliente].historico.push(operacao);
 
     atualizarExtrato();
@@ -64,7 +58,7 @@ button2.addEventListener("click", function(){
 
 function atualizarExtrato(){
     var extrato = document.getElementById("extrato");
-    extrato.innerText = "";
+    extrato.innerHTML = "";
 
     var extrato2 = document.getElementById("extrato2").getElementsByTagName('tbody')[0];
 

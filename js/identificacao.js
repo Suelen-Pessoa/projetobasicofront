@@ -19,12 +19,8 @@ function validar() {
         document.getElementById("recebeSenha").value = "";
     	document.getElementById("recebeUsuario").focus();
     }
+  }
 }
-
-}
-
-
-
 document.getElementById("recebeUsuario").focus();
 
 

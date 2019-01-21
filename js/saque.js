@@ -1,10 +1,3 @@
-function habilitaCampo(){
-
-    mostrarCampos.classList.remove("invisivel");
-    document.getElementById("valor").focus();
-
-}
-
 
 function sacar(valor){
 	atualizaMensagem();
@@ -24,15 +17,14 @@ function sacar(valor){
 	if (valor >0 && valor <=saldoFloat){
 		saldoFloat -= parseFloat(valor);
 		var campoSaldo = document.getElementById("saldo");
-		campoSaldo.textContent = "Saldo: "+saldoFloat.toFixed(2);
+		campoSaldo.textContent = "Saldo: "+saldoFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 		limparCampo();	
 		}else
 	if(valor <0){
 		var campoMensagem = document.querySelector(".mensagem");
 		campoMensagem.textContent = ("Valor negativo. Informe o valor para saque.");
 		limparCampo();
-		}else
-	if(valor>saldoFloat){
+		}else{
 		var campoMensagem = document.querySelector(".mensagem");
 		campoMensagem.textContent = ("Saldo insuficiente.");
 		limparCampo();
