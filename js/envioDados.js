@@ -45,7 +45,7 @@ var saldoFloat;
 
 	function atualizaSaldo(){
 		var campoSaldo = document.getElementById("saldo");
-		campoSaldo.textContent = ("Saldo: R$ ")+saldoFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+		campoSaldo.textContent = ("Saldo: ")+saldoFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
 	}
 
